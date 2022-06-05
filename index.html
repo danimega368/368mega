@@ -1458,6 +1458,7 @@
 
       .newsInfo {
         padding: 0 10px;
+        margin-top: 10px;
         width: 100%;
         height: 34px;
         line-height: 34px;
@@ -2348,7 +2349,8 @@
 
       .navbar-fixed {
         background-color: #0d152b;
-        text-align: center
+        text-align: center;
+        padding-bottom: 10px;
       }
 
       .navbar-fixed .button-collapse {
@@ -2386,7 +2388,7 @@
         border-color: #a9a9a9;
         border-radius: 25px;
         background-color: #0d152b;
-        font-size: 30px;
+        font-size: 20px;
         margin: auto;
         width: 60%;
         padding: 10px;
@@ -2480,6 +2482,60 @@
         transform: scale(1.5);
       }
 
+      .container-payment {
+        /* display: grid!important; */
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr); 
+        grid-template-rows: repeat(2, 1fr);
+      }
+
+      .container-payment *:nth-child(2) { grid-area: 1 / 3; }
+
+      @media only screen and (max-width: 425px) {
+        .container-payment {
+          display: grid!important;
+          grid-template-columns: 1fr 1fr; 
+        }
+        .container-payment *:nth-child(2) { grid-area: 2 / 1; }
+      }
+
+      @media only screen and (max-width: 390px) {
+        .container-payment {
+          display: grid!important;
+          grid-template-columns: 1fr 1fr; 
+        }
+        .container-payment *:nth-child(2) { grid-area: 2 / 1; }
+      }
+
+      @media only screen and (max-width: 375px) {
+        .payment-wrapper {
+          max-width: 50%;
+          margin: 0px 10px 0px 72px;
+          width: 50%;
+          padding: 10px;
+        }
+
+        .container-payment {
+          display: grid!important;
+          grid-template-columns: 1fr 1fr;
+        }
+        .container-payment *:nth-child(2) { grid-area: 2 / 1; }
+      }
+
+      @media only screen and (max-width: 320px) {
+        .payment-wrapper {
+          max-width: 50%;
+          margin: 0px 10px 0px 42px;
+          width: 50%;
+          padding: 10px;
+        }
+
+        .container-payment {
+          display: grid!important;
+          grid-template-columns: 1fr 1fr;
+        }
+        .container-payment *:nth-child(2) { grid-area: 2 / 1; }
+      }
     </style>
     <link rel="canonical" href="https://368mega-pi.vercel.app/">
     <script type="application/ld+json">
@@ -2653,7 +2709,7 @@
       <header>
         <div class="navbar-fixed">
           <a href="#" class="brand-logo">
-            <amp-img src="https://images.linkcdn.cloud/V1/53/logo/53-logo-1881613258.webp" width="218" height="40" alt="logo 368MEGA" class="i-amphtml-layout-fixed i-amphtml-layout-size-defined" style="width:218px;height:40px" i-amphtml-layout="fixed"></amp-img>
+            <amp-img src="https://images.linkcdn.cloud/V1/53/logo/53-logo-1881613258.webp" width="210" height="55" alt="logo 368MEGA" class="i-amphtml-layout-fixed i-amphtml-layout-size-defined" style="width:210px;height:55px" i-amphtml-layout="fixed"></amp-img>
           </a>
           <ul>
             <li class="seo-text">
@@ -2682,7 +2738,7 @@
                 <a class="btn btn-secondary-primary" href="https://amcad.mx/register/E1B8082B">Masuk</a>
               </li>
               <li class="seo-text">
-                <a class="btn btn-join" href="https://368MEGA.移动/account/register/marikitacuan">Daftar</a>
+                <a class="btn btn-join" href="https://amcad.mx/register/E1B8082B">Daftar</a>
               </li>
             </ul>
           </div>
@@ -2698,12 +2754,12 @@
         <amp-carousel width="411" height="96" layout="responsive" type="slides" autoplay delay="2000" role="region" aria-label="type='slides' carousel" class="i-amphtml-layout-responsive i-amphtml-layout-size-defined" i-amphtml-layout="responsive">
           <i-amphtml-sizer slot="i-amphtml-svc" style="display:block;padding-top:23.3577%"></i-amphtml-sizer>
           <a href="https://amcad.mx/register/E1B8082B">
-            <amp-img data-hero src="https://images.linkcdn.cloud/V1/53/banner/53-banner-1837690624.webp" width="411" height="96" layout="responsive" alt="Welcome - 368MEGA" class="i-amphtml-layout-responsive i-amphtml-layout-size-defined" i-amphtml-layout="responsive">
+            <amp-img data-hero src="https://images.linkcdn.cloud/V1/53/banner/53-banner-1837690624.webp" width="1571" height="425" layout="responsive" alt="Welcome - 368MEGA" class="i-amphtml-layout-responsive i-amphtml-layout-size-defined" i-amphtml-layout="responsive">
               <i-amphtml-sizer slot="i-amphtml-svc" style="display:block;padding-top:23.3577%"></i-amphtml-sizer>
             </amp-img>
           </a>
           <a href="https://amcad.mx/register/E1B8082B">
-            <amp-img data-hero src="https://images.linkcdn.cloud/V1/53/banner/53-banner-1267947096.webp" width="411" height="96" layout="responsive" alt="Bonus - 368MEGA" class="i-amphtml-layout-responsive i-amphtml-layout-size-defined" i-amphtml-layout="responsive">
+            <amp-img data-hero src="https://images.linkcdn.cloud/V1/53/banner/53-banner-1267947096.webp" width="1571" height="425" layout="responsive" alt="Bonus - 368MEGA" class="i-amphtml-layout-responsive i-amphtml-layout-size-defined" i-amphtml-layout="responsive">
               <i-amphtml-sizer slot="i-amphtml-svc" style="display:block;padding-top:23.3577%"></i-amphtml-sizer>
             </amp-img>
           </a>
@@ -2765,89 +2821,93 @@
           <div class="progressive-jackpot visibility-auto">
             <div class="jackpot-wrapper">
               <div class="border-solid">
-                <p style="font-size: 20px; text-align: center;">- PROGRESSIVE JACKPOT -</p>
+                <p style="font-size: 18px; text-align: center;">PROGRESSIVE JACKPOT</p><br>
                 <span id="jackpot" data-value="16300618242.91">16,300,618,242.91</span>
               </div>
             </div>
           </div>
           <div class="payment-wrapper">
-            <div class="supported-bank visibility-auto">
-              <div class="col-12 col-sm-6 bank">
-                <div class="bca">
-                  <span class="indicator on"></span>
-                  BCA
+            <div class="supported-bank">
+              <div class="container-payment">
+                <div class="col-12 col-sm-6 bank">
+                  <div class="bca">
+                    <span class="indicator on"></span>
+                    BCA
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 bank">
+                  <div class="mandiri">
+                    <span class="indicator on"></span>
+                    Mandiri
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 bank">
+                  <div class="cimb">
+                    <span class="indicator on"></span>
+                    CIMB
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 bank">
+                  <div class="bni">
+                    <span class="indicator on"></span>
+                    BNI
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 bank">
+                  <div class="bri">
+                    <span class="indicator on"></span>
+                    BRI
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 bank">
+                  <div class="danamon">
+                    <span class="indicator on"></span>
+                    Danamon
+                  </div>
                 </div>
               </div>
-              <div class="col-12 col-sm-6 bank">
-                <div class="mandiri">
-                  <span class="indicator on"></span>
-                  Mandiri
+              <div class="container-payment">
+                <div class="col-12 col-sm-6 bank">
+                  <div class="permata">
+                    <span class="indicator on"></span>
+                    Permata
+                  </div>
                 </div>
-              </div>
-              <div class="col-12 col-sm-6 bank">
-                <div class="cimb">
-                  <span class="indicator on"></span>
-                  CIMB
+                <div class="col-12 col-sm-6 bank">
+                  <div class="ovo">
+                    <span class="indicator on"></span>
+                    OVO
+                  </div>
                 </div>
-              </div>
-              <div class="col-12 col-sm-6 bank">
-                <div class="bni">
-                  <span class="indicator on"></span>
-                  BNI
+                <div class="col-12 col-sm-6 bank">
+                  <div class="gopay">
+                    <span class="indicator on"></span>
+                    GoPay
+                  </div>
                 </div>
-              </div>
-              <div class="col-12 col-sm-6 bank">
-                <div class="bri">
-                  <span class="indicator on"></span>
-                  BRI
+                <div class="col-12 col-sm-6 bank">
+                  <div class="dana">
+                    <span class="indicator on"></span>
+                    Dana
+                  </div>
                 </div>
-              </div>
-              <div class="col-12 col-sm-6 bank">
-                <div class="danamon">
-                  <span class="indicator on"></span>
-                  Danamon
+                <div class="col-12 col-sm-6 bank">
+                  <div class="panin">
+                    <span class="indicator on"></span>
+                    Panin
+                  </div>
                 </div>
-              </div>
-              <div class="col-12 col-sm-6 bank">
-                <div class="permata">
-                  <span class="indicator on"></span>
-                  Permata
+                <div class="col-12 col-sm-6 bank">
+                  <div class="linkaja">
+                    <span class="indicator on"></span>
+                    linkaja
+                  </div>
                 </div>
-              </div>
-              <div class="col-12 col-sm-6 bank">
-                <div class="ovo">
-                  <span class="indicator on"></span>
-                  OVO
-                </div>
-              </div>
-              <div class="col-12 col-sm-6 bank">
-                <div class="gopay">
-                  <span class="indicator on"></span>
-                  GoPay
-                </div>
-              </div>
-              <div class="col-12 col-sm-6 bank">
-                <div class="dana">
-                  <span class="indicator on"></span>
-                  Dana
-                </div>
-              </div>
-              <div class="col-12 col-sm-6 bank">
-                <div class="panin">
-                  <span class="indicator on"></span>
-                  Panin
-                </div>
-              </div>
-              <div class="col-12 col-sm-6 bank">
-                <div class="linkaja">
-                  <span class="indicator on"></span>
-                  linkaja
-                </div>
-              </div>
-              <div class="col-12 col-sm-6 bank">
-                <div class="sakuku">
-                  <span class="indicator on"></span>
-                    Sakuku
+                <div class="col-12 col-sm-6 bank">
+                  <div class="sakuku">
+                    <span class="indicator on"></span>
+                      Sakuku
+                  </div>
                 </div>
               </div>
             </div>
