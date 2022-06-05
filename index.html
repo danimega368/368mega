@@ -2492,6 +2492,14 @@
       .container-payment *:nth-child(2) { grid-area: 1 / 3; }
 
       @media only screen and (max-width: 425px) {
+        .supported-bank {
+          display: grid!important;
+          grid-template-columns: repeat(4, 1.5fr);
+          max-width: 50%;
+          margin: 0px 10px 0px -95px;
+          width: 50%;
+          padding: 10px;
+        }
         .container-payment {
           display: grid!important;
           grid-template-columns: 1fr 1fr; 
@@ -2500,6 +2508,14 @@
       }
 
       @media only screen and (max-width: 390px) {
+        .supported-bank {
+          display: grid!important;
+          grid-template-columns: repeat(4, 1.5fr);
+          max-width: 50%;
+          margin: 0px 10px 0px -102px;
+          width: 50%;
+          padding: 10px;
+        }
         .container-payment {
           display: grid!important;
           grid-template-columns: 1fr 1fr; 
@@ -2508,6 +2524,14 @@
       }
 
       @media only screen and (max-width: 375px) {
+        .supported-bank {
+          display: grid!important;
+          grid-template-columns: repeat(4, 1.5fr);
+          max-width: 50%;
+          margin: 0px 10px 0px -93px;
+          width: 50%;
+          padding: 10px;
+        }
         .payment-wrapper {
           max-width: 50%;
           margin: 0px 10px 0px 72px;
@@ -2523,18 +2547,15 @@
       }
 
       @media only screen and (max-width: 320px) {
-        .payment-wrapper {
-          max-width: 50%;
-          margin: 0px 10px 0px 42px;
-          width: 50%;
+        .supported-bank {
+          display: grid!important;
+          grid-template-columns: repeat(2, 1fr) !important; 
+          margin: 0px 10px 0px -27px;
+          width: 10%;
           padding: 10px;
         }
-
-        .container-payment {
-          display: grid!important;
-          grid-template-columns: 1fr 1fr;
-        }
-        .container-payment *:nth-child(2) { grid-area: 2 / 1; }
+        
+        .supported-bank *:nth-child(2) { grid-area: 2 / 1; }
       }
     </style>
     <link rel="canonical" href="https://368mega-pi.vercel.app/">
@@ -2901,12 +2922,6 @@
                   <div class="linkaja">
                     <span class="indicator on"></span>
                     linkaja
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 bank">
-                  <div class="sakuku">
-                    <span class="indicator on"></span>
-                      Sakuku
                   </div>
                 </div>
               </div>
