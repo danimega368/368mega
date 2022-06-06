@@ -2483,7 +2483,6 @@
       }
 
       .container-payment {
-        /* display: grid!important; */
         width: 100%;
         grid-template-columns: repeat(3, 1fr); 
         grid-template-rows: repeat(2, 1fr);
@@ -2493,7 +2492,7 @@
 
       @media only screen and (max-width: 425px) {
         .supported-bank {
-          display: grid!important;
+          display: grid;
           grid-template-columns: repeat(4, 1.5fr);
           max-width: 50%;
           margin: 0px 10px 0px -95px;
@@ -2501,7 +2500,7 @@
           padding: 10px;
         }
         .container-payment {
-          display: grid!important;
+          display: grid;
           grid-template-columns: 1fr 1fr; 
         }
         .container-payment *:nth-child(2) { grid-area: 2 / 1; }
@@ -2509,7 +2508,7 @@
 
       @media only screen and (max-width: 390px) {
         .supported-bank {
-          display: grid!important;
+          display: grid;
           grid-template-columns: repeat(4, 1.5fr);
           max-width: 50%;
           margin: 0px 10px 0px -102px;
@@ -2517,7 +2516,7 @@
           padding: 10px;
         }
         .container-payment {
-          display: grid!important;
+          display: grid;
           grid-template-columns: 1fr 1fr; 
         }
         .container-payment *:nth-child(2) { grid-area: 2 / 1; }
@@ -2525,7 +2524,7 @@
 
       @media only screen and (max-width: 375px) {
         .supported-bank {
-          display: grid!important;
+          display: grid;
           grid-template-columns: repeat(4, 1.5fr);
           max-width: 50%;
           margin: 0px 10px 0px -93px;
@@ -2540,7 +2539,7 @@
         }
 
         .container-payment {
-          display: grid!important;
+          display: grid;
           grid-template-columns: 1fr 1fr;
         }
         .container-payment *:nth-child(2) { grid-area: 2 / 1; }
@@ -2548,8 +2547,8 @@
 
       @media only screen and (max-width: 320px) {
         .supported-bank {
-          display: grid!important;
-          grid-template-columns: repeat(2, 1fr) !important; 
+          display: grid;
+          grid-template-columns: repeat(2, 1fr) ; 
           margin: 0px 10px 0px -27px;
           width: 10%;
           padding: 10px;
